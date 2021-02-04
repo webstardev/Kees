@@ -15,7 +15,7 @@
         <v-btn
           class="btn-get mt-16 mb-2 btn-primary-outline"
           outlined
-          color="white"
+          color="#fff"
           >Geef je code door</v-btn
         >
       </div>
@@ -87,7 +87,8 @@
         </v-row>
       </v-container>
     </section>
-    <person-rows></person-rows>
+    <person-section></person-section>
+    <two-person-section></two-person-section>
     <info-footer> </info-footer>
   </v-container>
 </template>
@@ -95,10 +96,11 @@
 <script>
 import TopNavbar from "@/views/components/TopNavbar.vue";
 import InfoFooter from "@/views/components/InfoFooter.vue";
-import PersonRows from "./PersonRows.vue";
+import PersonSection from "./PersonSection.vue";
+import TwoPersonSection from "./TwoPersonSection.vue";
 
 export default {
-  components: { TopNavbar, InfoFooter, PersonRows },
+  components: { TopNavbar, InfoFooter, PersonSection, TwoPersonSection },
   name: "info-page",
 };
 </script>

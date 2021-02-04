@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    class="info-footer mt-auto d-flex flex-column align-items-center"
+    class="info-footer mt-auto d-flex flex-column align-items-center pt-13 pb-12"
     padless
     :color="$vuetify.theme.themes.light.backgroundPrimary"
   >
@@ -25,10 +25,3 @@ export default {
   }),
 };
 </script>
-
-<style scoped lang="scss">
-.info-footer {
-  padding-top: 49px;
-  padding-bottom: 45.6px;
-}
-</style>

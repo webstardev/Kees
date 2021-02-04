@@ -13,6 +13,13 @@ const router = new VueRouter({
   routes,
 });
 
+import VueMoment from "vue-moment";
+import moment from "moment-timezone";
+
+Vue.use(VueMoment, {
+  moment,
+});
+
 new Vue({
   el: "#app",
   router: router,

@@ -1,3 +1,7 @@
+* {
+  line-height: 1.26;
+}
+
 .btn-primary-outline {
   width: 392px !important;
   height: 70px !important;
@@ -6,4 +10,20 @@
   font-size: 20px !important;
   font-weight: normal !important;
   text-transform: inherit;
+}
+
+.btn-outline-secondary {
+  width: 392px !important;
+  height: 70px !important;
+  border-radius: 8px !important;
+  border: solid 2px #070000 !important;
+  background-color: transparent !important;
+  text-transform: inherit !important;
+  font-size: 20px !important;
+  color: #070000 !important;
+}
+
+h1 {
+  font-family: "Neuton", serif;
+  font-size: 70px;
 }

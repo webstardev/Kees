@@ -22,7 +22,7 @@
         <v-col class="px-0 py-0 person-img-div">
           <v-img
             class="right-img"
-            src="@/assets/person1.jpg"
+            src="@/assets/person-1.jpg"
             width="50vw"
             max-width="50vw"
             height="50vw"
@@ -34,7 +34,7 @@
         <v-col class="px-0 py-0 person-img-div">
           <v-img
             class="left-img"
-            src="@/assets/person2.jpg"
+            src="@/assets/person-2.jpg"
             width="50vw"
             max-width="50vw"
             height="50vw"
@@ -51,7 +51,7 @@
               Zo verdiep je de materie en krijg je praktische opdrachten om het
               geleerde meteen in de praktijk te brengen.
             </h4>
-            <v-btn outlined class="mt-14 btn-primary-outline" color="white">
+            <v-btn outlined class="mt-14 btn-primary-outline" color="#fff">
               Download het eerste werkboek
             </v-btn>
           </div>
@@ -86,7 +86,7 @@
         <v-col class="px-0 py-0 person-img-div">
           <v-img
             class="left-img"
-            src="@/assets/person2.jpg"
+            src="@/assets/person-3.jpg"
             width="50vw"
             max-width="50vw"
             height="50vw"
@@ -112,7 +112,7 @@
 </template>
 <script>
 export default {
-  name: "person-row",
+  name: "person-section",
 };
 </script>
 
@@ -126,7 +126,7 @@ export default {
     top: 0;
     width: 50vw;
     height: 50vw;
-    background-color: #256d7e;
+    background-color: var(--backgroundGreen);
   }
 }
 
