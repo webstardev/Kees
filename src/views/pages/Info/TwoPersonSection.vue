@@ -3,14 +3,30 @@
     <h1 class="section-title text-center">Over de trainers</h1>
     <v-container class="main-container py-0">
       <v-row>
-        <v-col md="6" class="person-col px-0 py-0 person-col-second">
-          <v-img
-            src="@/assets/person-4.jpg"
-            width="100%"
-            height="100%"
-            aspect-ratio="1"
-          ></v-img>
-        </v-col>
+        <template v-if="personOne.onlyImg">
+          <v-col md="6" class="person-col px-0 py-0">
+            <v-img
+              src="@/assets/person-4.jpg"
+              width="100%"
+              height="100%"
+              aspect-ratio="1"
+            ></v-img>
+          </v-col>
+        </template>
+        <template v-else>
+          <v-col
+            md="6"
+            class="person-one background-green d-flex flex-column justify-center align-center"
+          >
+            <v-avatar size="144px" class="mt-10">
+              <img :src="require(`@/assets/person-4.jpg`)" alt="person" />
+            </v-avatar>
+            <h2 class="mt-6 white--text text-center">{{ personOne.name }}</h2>
+            <p class="mt-14 white--text text-center">
+              {{ personOne.description }}
+            </p>
+          </v-col>
+        </template>
         <v-col md="6" class="person-col px-0 py-0">
           <v-img
             src="@/assets/person-5.jpg"
@@ -34,6 +50,19 @@
 <script>
 export default {
   name: "two-person-section",
+  props: {
+    personOne: {
+      type: Object,
+      default: function() {
+        return {
+          onlyImg: true,
+          imgSrc: "",
+          name: "",
+          description: "",
+        };
+      },
+    },
+  },
   data: () => ({
     curDate: new Date(),
   }),
@@ -46,6 +75,8 @@ export default {
     },
   },
   mounted() {
+    const a = this.personOne;
+    console.log(a);
     this.todo();
   },
 };
@@ -73,6 +104,18 @@ export default {
   .timer {
     font-size: 90px;
     font-weight: bold;
+  }
+
+  .person-one {
+    padding: 54px 100px;
+    h2 {
+      font-size: 49px;
+    }
+    p {
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 1.5;
+    }
   }
 }
 </style>

@@ -23,7 +23,15 @@
   color: #070000 !important;
 }
 
+.background-green {
+  background-color: var(--backgroundGreen);
+}
+
 h1 {
   font-family: "Neuton", serif;
   font-size: 70px;
+}
+h2 {
+  font-family: "Neuton", serif;
+  font-size: 40px;
 }
