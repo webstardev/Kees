@@ -1,3 +1,4 @@
+import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import colors from "vuetify/lib/util/colors";
@@ -5,17 +6,20 @@ import colors from "vuetify/lib/util/colors";
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  icons: {
+    iconfont: "mdi", // default - only for display purposes
+  },
   theme: {
     light: true,
     options: { customProperties: true },
     themes: {
       light: {
-        primary: colors.purple,
+        primary: "white",
         secondary: colors.grey.darken1,
         accent: colors.shades.black,
         error: colors.red.accent3,
-        background: "#141414", // If not using lighten/darken, use base to return hex
-        "primary--text": "white",
+        backgroundPrimary: "#141414",
+        color: "white",
       },
     },
   },

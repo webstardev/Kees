@@ -4,6 +4,8 @@ import App from "./App";
 import vuetify from "@/plugins/vuetify";
 import routes from "./router/index";
 
+import "./sass/index.scss";
+
 Vue.use(VueRouter);
 
 const router = new VueRouter({
