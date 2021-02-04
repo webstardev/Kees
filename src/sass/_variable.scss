@@ -1,3 +1,22 @@
 :root {
   --navbarHeight: 93px;
+  --mainContainer: 1700px;
+}
+
+@media screen and (max-width: 1900px) {
+  :root {
+    --mainContainer: 1600px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --mainContainer: 1440px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --mainContainer: 1280px;
+  }
 }

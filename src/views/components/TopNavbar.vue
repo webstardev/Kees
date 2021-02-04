@@ -6,7 +6,7 @@
     <router-link :to="{ name: 'info' }">
       <v-img src="@/assets/logo.svg" width="140px" height="40px" />
     </router-link>
-    <h3 class="username ml-auto primary--text">MARCEL</h3>
+    <h5 class="username ml-auto primary--text">MARCEL</h5>
     <v-avatar class="user-avatar" color="white" size="57px"></v-avatar>
   </v-app-bar>
 </template>
@@ -24,6 +24,7 @@ export default {
   flex: 0 0 var(--navbarHeight);
   position: fixed;
   top: 0;
+  z-index: 1;
 
   .v-toolbar__content {
     padding: 0;
