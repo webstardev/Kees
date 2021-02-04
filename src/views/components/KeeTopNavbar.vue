@@ -1,9 +1,9 @@
 <template>
-  <h1>asdfasdfasdf</h1>
+  <v-app-bar></v-app-bar>
 </template>
 
 <script>
 export default {
-  name: "info-page",
+  name: "kee-top-navbar",
 };
 </script>

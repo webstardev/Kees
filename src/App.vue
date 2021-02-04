@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <template>
-      <router-view></router-view>
-    </template>
-  </div>
+  <v-app>
+    <router-view />
+  </v-app>
 </template>
 
 <script>
@@ -12,13 +10,9 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;700;800&display=swap");
+.application {
+  font-family: "Neuton", serif;
 }
 </style>
