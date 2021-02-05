@@ -5,10 +5,10 @@
       <div
         class="section-content d-flex flex-column justify-center align-center"
       >
-        <h1 class="text-center primary--text">
-          Hi Marcel, <br /><br />Welkom bij Leadership Solutions!
+        <h1 class="text-center white--text">
+          Hi {{ personName }}, <br /><br />Welkom bij Leadership Solutions!
         </h1>
-        <h3 class="text-center primary--text mt-8">
+        <h3 class="text-center white--text mt-8">
           Het platform waar jij kunt ontdekken hoe je succesvol kunt zijn op het
           gebied van leiderschap.
         </h3>
@@ -16,6 +16,7 @@
           class="btn-get mt-16 mb-2 btn-primary-outline"
           outlined
           color="#fff"
+          @click="showGetCodeDlg"
           >Geef je code door</v-btn
         >
       </div>
@@ -31,7 +32,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 24 lessen over<br />
                 persoonlijk leiderschap
               </p>
@@ -47,7 +48,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Ga verder waar je <br />gebleven bent.
               </p>
             </div>
@@ -62,7 +63,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Spraakmakende<br />
                 webinars en live events
               </p>
@@ -78,7 +79,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Inclusief werkboeken om<br />
                 verder te verdiepeIn
               </p>
@@ -98,10 +99,27 @@ import TopNavbar from "@/views/components/TopNavbar.vue";
 import InfoFooter from "@/views/components/InfoFooter.vue";
 import PersonSection from "./PersonSection.vue";
 import TwoPersonSection from "./TwoPersonSection.vue";
+import GetCodeDlg from "./GetCodeDlg.vue";
 
 export default {
-  components: { TopNavbar, InfoFooter, PersonSection, TwoPersonSection },
+  components: {
+    TopNavbar,
+    InfoFooter,
+    PersonSection,
+    TwoPersonSection,
+    GetCodeDlg,
+  },
   name: "info-page",
+  data: () => ({
+    personName: "Marcel",
+  }),
+  methods: {
+    showGetCodeDlg() {
+      this.$dialog.show(GetCodeDlg, {
+        width: "757px",
+      });
+    },
+  },
 };
 </script>
 

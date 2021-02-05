@@ -19,7 +19,7 @@
             class="person-one background-green d-flex flex-column justify-center align-center"
           >
             <v-avatar size="144px" class="mt-10">
-              <img :src="require(`@/assets/person-4.jpg`)" alt="person" />
+              <img src="@/assets/person-4.jpg" alt="person" />
             </v-avatar>
             <h2 class="mt-6 white--text text-center">{{ personOne.name }}</h2>
             <p class="mt-14 white--text text-center">
@@ -64,7 +64,8 @@ export default {
     },
   },
   data: () => ({
-    curDate: new Date(),
+    curDate: require("moment")(new Date()).format("HH:mm:ss"),
+    test: "",
   }),
   methods: {
     todo: function() {
@@ -75,8 +76,6 @@ export default {
     },
   },
   mounted() {
-    const a = this.personOne;
-    console.log(a);
     this.todo();
   },
 };
@@ -108,6 +107,10 @@ export default {
 
   .person-one {
     padding: 54px 100px;
+
+    .v-avatar {
+      cursor: pointer;
+    }
     h2 {
       font-size: 49px;
     }

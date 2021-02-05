@@ -19,5 +19,10 @@ export default {
   font-family: "Roboto", sans-serif;
   background-color: white !important;
   min-height: 100vh;
+
+  a.primary--text {
+    color: #24abff !important;
+    text-decoration: underline;
+  }
 }
 </style>

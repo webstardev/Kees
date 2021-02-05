@@ -44,10 +44,10 @@
         <v-col md="6" class="d-flex align-center justify-center">
           <div class="hover-div"></div>
           <div class="d-flex flex-column person-content pl-16  pr-2">
-            <h1 class="primary--text">
+            <h1 class="white--text">
               Ieder deel van de training heeft een werkboek
             </h1>
-            <h4 class="primary--text mt-16">
+            <h4 class="white--text mt-16">
               Zo verdiep je de materie en krijg je praktische opdrachten om het
               geleerde meteen in de praktijk te brengen.
             </h4>
@@ -96,10 +96,10 @@
         <v-col md="6" class="d-flex align-center justify-center">
           <div class="hover-div"></div>
           <div class="d-flex flex-column person-content pl-16  pr-2">
-            <h1 class="primary--text">
+            <h1 class="white--text">
               Leer met iedere device, waar je ook bent op eigen tempo
             </h1>
-            <h4 class="primary--text mt-16">
+            <h4 class="white--text mt-16">
               Wisselen van laptop naar tablet of mobiel? Geen enkel probleem!
               Log in met je andere device en je kunt meteen verder waar je
               gebleven was. Wel zo handig.

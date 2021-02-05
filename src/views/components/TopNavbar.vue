@@ -6,7 +6,7 @@
     <router-link :to="{ name: 'info' }">
       <v-img src="@/assets/logo.svg" width="140px" height="40px" />
     </router-link>
-    <h5 class="username ml-auto primary--text">MARCEL</h5>
+    <h5 class="username ml-auto white--text">MARCEL</h5>
     <v-avatar class="user-avatar" color="#fff" size="57px"></v-avatar>
   </v-app-bar>
 </template>

@@ -5,10 +5,10 @@
       <div
         class="section-content d-flex flex-column justify-center align-center"
       >
-        <h1 class="text-center primary--text">
+        <h1 class="text-center white--text">
           Hi Marcel, <br /><br />Welkom bij Leadership Solutions!
         </h1>
-        <h3 class="text-center primary--text mt-8">
+        <h3 class="text-center white--text mt-8">
           Het platform waar jij kunt ontdekken hoe je succesvol kunt zijn op het
           gebied van leiderschap.
         </h3>
@@ -31,7 +31,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 24 lessen over<br />
                 persoonlijk leiderschap
               </p>
@@ -47,7 +47,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Ga verder waar je <br />gebleven bent.
               </p>
             </div>
@@ -62,7 +62,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Spraakmakende<br />
                 webinars en live events
               </p>
@@ -78,7 +78,7 @@
                 height="20px"
                 alt="check circle"
               />
-              <p class="primary--text py-0 my-0 ml-3">
+              <p class="white--text py-0 my-0 ml-3">
                 Inclusief werkboeken om<br />
                 verder te verdiepeIn
               </p>
@@ -105,7 +105,7 @@ export default {
   data: () => ({
     personOne: {
       onlyImg: false,
-      imgSrc: "`@/assets/person-4.jpg`",
+      imgSrc: "@/assets/person-4.jpg",
       name: "Angelien Landstra",
       description:
         "Executive trainer & coach met meer dan 20 jaar ervaring op het gebied van leiderschap- en team ontwikkeling.",

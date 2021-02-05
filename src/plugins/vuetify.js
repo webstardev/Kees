@@ -14,13 +14,12 @@ export default new Vuetify({
     options: { customProperties: true },
     themes: {
       light: {
-        primary: "#fff",
+        primary: "#24abff",
         secondary: "#091f24",
         accent: colors.shades.black,
         error: colors.red.accent3,
         backgroundPrimary: "#141414",
         backgroundGreen: "#256d7e",
-        color: "#fff",
       },
     },
   },
